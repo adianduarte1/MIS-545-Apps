@@ -1,8 +1,10 @@
 import streamlit as st
 import pickle
 import numpy as np
+import joblib
 
-# Load the trained modelmodel = joblib.load("regression_model.joblib")
+# Load the trained model
+model = joblib.load("regression_model.joblib")
 
 # App title
 st.title("California Housing Price Predictor")
